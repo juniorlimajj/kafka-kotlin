@@ -4,3 +4,6 @@ jdk:
   - openjdk8
 before_install:
   - chmod +x mvnw
+install:
+  - mvn install -N io.takari:maven:wrapper -Dmaven=3.3.9
+  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
