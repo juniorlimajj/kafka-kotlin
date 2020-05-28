@@ -1,5 +1,7 @@
 # Kafka + Kotlin
 
+[![Build Status](https://travis-ci.org/juniorlimajj/kafka-kotlin.svg?branch=master)](https://travis-ci.org/github/juniorlimajj/kafka-kotlin)
+
 Simple implementation of Kafka using Kotlin and Spring Boot.
 
 Requirements:

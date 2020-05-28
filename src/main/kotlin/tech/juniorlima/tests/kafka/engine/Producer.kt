@@ -12,8 +12,7 @@ class Producer {
   private val TOPIC = "users"
 
   @Autowired
-  private val kafkaTemplate: KafkaTemplate<String, String?>? = null
-
+  private lateinit var kafkaTemplate: KafkaTemplate<String, String?>
   fun sendMessage(message: String?) {
     logger.info(String.format("#### -> Sent message -> %s", message))
     kafkaTemplate!!.send(TOPIC, message)
