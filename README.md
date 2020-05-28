@@ -17,6 +17,10 @@ Cloning and running the project:
  - ``docker-compose up -d``
  - ``mvn spring-boot:run``
 
+Sending a message:
+-
+ - ``curl --location --request POST 'http://localhost:8081/kafka/publish?message=message'``
+
 Reference:
 - 
  - https://www.confluent.io/blog/apache-kafka-spring-boot-application/
