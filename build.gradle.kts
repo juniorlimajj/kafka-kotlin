@@ -24,6 +24,8 @@ dependencies {
 	implementation("ch.qos.logback:logback-core:1.4.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.kafka:spring-kafka-test")
+	testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
+
 }
 
 tasks.withType<KotlinCompile> {
